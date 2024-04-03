@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valette - Moda Masculina</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fff676a9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0.5em 0;
+            color: #fff676a9;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+            color: #555;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #fff676a9;
+            color: #000000;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+            width: 30%;
+            margin-right: 2%;
+            vertical-align: top;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 1.2em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Valette</h1>
+        <p>Boutique de Moda Masculina</p>
+    </header>
+    <nav>
+        <a href="file:///D:/VALL/INICIO.HTML">Início</a>
+        <a href="file:///D:/VALL/HOMENS.HTML">Homens</a>
+        <a href="file:///D:/VALL/MULHERES.HTML">Mulheres</a>
+        <a href="file:///D:/VALL/processamentodepagamento.html">Sobre</a>
+    </nav>
+    <div class="container">
+        <div class="product">
+            <img src="masc1.jpg" alt="Camisa">
+            <h3>Moletom Slim Fit</h3>
+            <p>R$ 99,90</p>
+            <a href="file:///D:/VALL/processamentodepagamento.html" class="comprar-link" onclick="finalizarCompra('produto2')">Comprar</a>
+            <p>Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="product">
+            <img src="masc2.jpg" alt="Calça Jeans">
+            <h3>Shorts Skin</h3>
+            <p>R$ 129,90</p>
+            <a href="file:///D:/VALL/processamentodepagamento.html" class="comprar-link" onclick="finalizarCompra('produto2')">Comprar</a>
+            <p>Descrição:Questo abito è un'elegante combinazione di stile classico e contemporaneo.</p>
+        </div>
+        <div class="product">
+            <img src="masc3.jpg" alt="Sapato">
+            <h3>Conjunto Puma</h3>
+            <p>R$ 99,90</p>
+            <a href="file:///D:/VALL/processamentodepagamento.html" class="comprar-link" onclick="finalizarCompra('produto2')">Comprar</a>
+            <p>Descrição: Le linee pulite e i dettagli raffinati di questo vestito lo rendono un capo di moda senza tempo.</p>
+        </div>
+        <div class="product">
+            <img src="masc4.jpg" alt="Sapato">
+            <h3>Camisa Dondup</h3>
+            <p>R$ 39,90</p>
+            <a href="file:///D:/VALL/processamentodepagamento.html" class="comprar-link" onclick="finalizarCompra('produto2')">Comprar</a>
+            <p>Descrição: La borsa è un'icona di eleganza italiana con il suo design sofisticato e i materiali di alta qualità.</p>
+        </div>
+        <div class="product">
+            <img src="masc5.jpg" alt="Sapato">
+            <h3>Camisa Freestyle</h3>
+            <p>R$ 199,90</p>
+            <a href="file:///D:/VALL/processamentodepagamento.html" class="comprar-link" onclick="finalizarCompra('produto2')">Comprar</a>
+            <p>Descrição: Questi pantaloni sono perfetti per un look casual chic con il loro taglio sartoriale e la finitura impeccabile.</p>
+        </div>
+        <div class="product">
+            <img src="masc6.jpg" alt="Sapato">
+            <h3>jaqueta de Couro</h3>
+            <p>R$ 299,90</p>
+            <a href="file:///D:/VALL/processamentodepagamento.html" class="comprar-link" onclick="finalizarCompra('produto2')">Comprar</a>
+            <p>Descrição: La maglia è un'interpretazione moderna di un classico italiano, con il suo tessuto morbido e la silhouette aderente.</p>
+        </div>
+        <div class="product">
+            <img src="masc7.jpg" alt="Sapato">
+            <h3>Swetter</h3>
+            <p>R$ 89,90</p>
+            <a href="file:///D:/VALL/processamentodepagamento.html" class="comprar-link" onclick="finalizarCompra('produto2')">Comprar</a>
+            <p>Descrição:Questa giacca incarna lo spirito dell'alta moda italiana, con la sua maestria artigianale e l'attenzione ai dettagli.</p>
+        </div>
+        <div class="product">
+            <img src="masc8.jpg" alt="Sapato">
+            <h3>jaqueta de Couro</h3>
+            <p>R$ 79,90</p>
+            <a href="file:///D:/VALL/processamentodepagamento.html" class="comprar-link" onclick="finalizarCompra('produto2')">Comprar</a>
+            <p>Descrição: Questa gonna è un'esplosione di colori e pattern ispirati alla vivace cultura italiana.
+                I sandali sono eleganti e allo stesso tempo confortevoli, un perfetto esempio di artigianato italiano.</p>
+        </div>
+        <div class="product">
+            <img src="masc11.jpg" alt="Sapato">
+            <h3>Jeans</h3>
+            <p>R$ 158,90</p>
+            <a href="file:///D:/VALL/processamentodepagamento.html" class="comprar-link" onclick="finalizarCompra('produto2')">Comprar</a>
+            <p>Descrição: Questi pantaloni sono perfetti per un look casual chic con il loro taglio sartoriale e la finitura impeccabile.</p>
+        </div>
+        <div class="product">
+            <img src="masc12.jpg" alt="Sapato">
+            <h3>Swetter</h3>
+            <p>R$ 259,90</p>
+            <a href="file:///D:/VALL/processamentodepagamento.html" class="comprar-link" onclick="finalizarCompra('produto2')">Comprar</a>
+            <p>Descrição: Le linee pulite e i dettagli raffinati di questo vestito lo rendono un capo di moda senza tempo.</p>
+        </div>
+        <div class="product">
+            <img src="masc16.jpg" alt="Sapato">
+            <h3>Swetter</h3>
+            <p>R$ 259,90</p>
+            <a href="file:///D:/VALL/processamentodepagamento.html" class="comprar-link" onclick="finalizarCompra('produto2')">Comprar</a>
+            <p>Descrição:  Questa gonna è un'esplosione di colori e pattern ispirati alla vivace cultura italiana.
+                I sandali sono eleganti e allo stesso tempo confortevoli, un perfetto esempio di artigianato italiano.</p>
+        </div>
+        <div class="product">
+            <img src="masc17.jpg" alt="Calça Jeans">
+            <h3>Elfric Eden</h3>
+            <p>R$ 229,90</p>
+            <a href="file:///D:/VALL/processamentodepagamento.html" class="comprar-link" onclick="finalizarCompra('produto2')">Comprar</a>
+            <p>Descrição:Questi pantaloni sono perfetti per un look casual chic con il loro taglio sartoriale e la finitura impeccabile.</p>
+        </div>
+        <div class="product">
+            <img src="masc18.jpg" alt="Calça Jeans">
+            <h3>Jaqueta De Couro</h3>
+            <p>R$ 259,90</p>
+            <a href="file:///D:/VALL/processamentodepagamento.html" class="comprar-link" onclick="finalizarCompra('produto2')">Comprar</a>
+            <p>Descrição:Questo abito è un'elegante combinazione di stile classico e contemporaneo.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Valette - Moda Italiana. Desde o início dando nosso melhor para sua família.</p>
+    </footer>
+</body>
+</html>

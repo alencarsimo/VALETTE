@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo Sim e Não</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  margin: 0 10px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+#sim {
+  border-color: #4CAF50;
+  color: #4CAF50;
+}
+
+#sim:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+#nao {
+  border-color: #f44336;
+  color: #f44336;
+}
+
+#nao:hover {
+  background-color: #f44336;
+  color: #fff;
+}
+
+#sim, #nao {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.text-center {
+  font-size: 24px;
+  color: #333;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="button-container">
+    <button id="sim" onclick="openLink()">Sim</button>
+    <button id="nao" onclick="moveButton()">Não</button>
+  </div>
+  <div class="text-center">
+    <p>Ta preparado?</p>
+  </div>
+</div>
+<script>
+function openLink() {
+  window.open("https://www.youtube.com/watch?v=65nfbW-27ps", "_blank");
+}
+
+function moveButton() {
+  var button = document.getElementById("nao");
+  var x = Math.random() * (window.innerWidth - button.offsetWidth);
+  var y = Math.random() * (window.innerHeight - button.offsetHeight);
+  
+  button.style.position = "absolute";
+  button.style.left = x + "px";
+  button.style.top = y + "px";
+}
+</script>
+</body>
+</html>
